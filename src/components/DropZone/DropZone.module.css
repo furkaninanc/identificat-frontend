@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    padding-bottom: 100%;
+
+    background-color: #f6f9ff;
+    border: 1px dashed var(--primary);
+    border-radius: 16px;
+
+    position: relative;
+}
+
+.dropOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.active {
+    background-color: var(--background);
+    border-color: var(--secondary);
+}
+
+.dropText {
+    text-align: center;
+    margin-top: 8px;
+    font: var(--text-regular);
+}
